@@ -1,8 +1,8 @@
 Fennel Neovim Plugin Example
 ---
 
-Followed [writing-a-neovim-plugin-with-lua][Writing a neovim plugin in Lua] but
-instead of using Lua, I used Fennel. [fennel][Fennel] is a language that
+Followed [Writing a neovim plugin in Lua][writing-a-neovim-plugin-with-lua] but
+instead of using Lua, I used Fennel. [Fennel][fennel] is a language that
 transpiles to Lua.
 
 As far as I can tell, there isn't really a convenient way to include this in

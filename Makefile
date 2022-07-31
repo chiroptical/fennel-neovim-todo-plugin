@@ -1,8 +1,27 @@
-build:
-	find . -name "*.fnl" -exec bash ./fnl-to-lua.sh {} \;
+SRC := ./fnl/todo
+SRCS := $(wildcard $(SRC)/*.fnl)
 
-format:
+OBJ := ./lua/todo
+OBJS := $(patsubst $(SRC)/%.fnl, $(OBJ)/%.lua, $(SRCS))
+
+.PHONY: build format clean
+
+build: $(OBJ) $(OBJS)
+
+format: $(SRCS)
 	alejandra .
-	find . -name "*.fnl" -exec fnlfmt --fix {} \;
 
-.PHONY: build format
+$(OBJ)/%.lua: $(SRC)/%.fnl
+	fennel --compile $< > $@
+
+$(SRC)/%.fnl: FORCE
+	fnlfmt --fix $@
+
+$(OBJ):
+	mkdir -p $(OBJ)
+
+clean:
+	rm -r $(OBJ)
+	rm result
+
+FORCE:

@@ -10,11 +10,9 @@
                       :docstring
                       (let [db (sqlite.open :todo.db)
                             current_todos (db:exec "SELECT * FROM todo_list WHERE completed = 'No';")]
-                        (each [index item (ipairs (. current_todos 2))]
-                          ; TODO: tostring prints 1LL but it would be nice if it was 1
+                        (each [index item (ipairs (. current_todos 2))] ; TODO: tostring prints 1LL but it would be nice if it was 1
                           (print (.. (tostring (. (. current_todos 1) index))
-                                     ": " item)))
-                        ; TODO: vim.fn.input accepts anything...
+                                     ": " item))) ; TODO: vim.fn.input accepts anything...
                         (local selection
                                (vim.fn.input "Which one did you finish? "))
                         (db:exec (.. "UPDATE todo_list SET completed = 'Yes' WHERE id = "

@@ -1,0 +1,50 @@
+{
+    "lua-ljsqlite3": {
+        "branch": "master",
+        "description": "LJSQLite3: SQlite3 Interface",
+        "homepage": "http://scilua.org/ljsqlite3.html",
+        "owner": "stepelu",
+        "repo": "lua-ljsqlite3",
+        "rev": "d7420028c1cc141ea6906b4afc467ce1f9d492f5",
+        "sha256": "0gi4wb7xp9bb8qvyxrvc08fadqnqxp6j0z4p5xi84zvp8mb2dd9c",
+        "type": "tarball",
+        "url": "https://github.com/stepelu/lua-ljsqlite3/archive/d7420028c1cc141ea6906b4afc467ce1f9d492f5.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "lua-xsys": {
+        "branch": "master",
+        "description": "LuaJIT General Purpose Routines",
+        "homepage": "http://scilua.org/xsys.html",
+        "owner": "stepelu",
+        "repo": "lua-xsys",
+        "rev": "aec247aa3a18cdc62338b8eaaec6652fb5127e98",
+        "sha256": "1f4kvvhw9bqxlrshbzcsbfi3cv4bkrpvd4d1v5gxip3rzjiciwxs",
+        "type": "tarball",
+        "url": "https://github.com/stepelu/lua-xsys/archive/aec247aa3a18cdc62338b8eaaec6652fb5127e98.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "82e5cd1ad3c387863f0545d7591512e76ab0fc41",
+        "sha256": "090l219mzc0gi33i3psgph6s2pwsc8qy4lyrqjdj4qzkvmaj65a7",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/82e5cd1ad3c387863f0545d7591512e76ab0fc41.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1a1bd86756ca15f8bafdce4499d6a88089bec3b6",
+        "sha256": "05x5vc22mq7mw6dr5v2yd5yj895m09n4nc29920d153265sikq5l",
+        "type": "tarball",
+        "url": "https://github.com/nixos/nixpkgs/archive/1a1bd86756ca15f8bafdce4499d6a88089bec3b6.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}

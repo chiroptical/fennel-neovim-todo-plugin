@@ -30,6 +30,11 @@ In your neovim config, replacing the path with the one from `pwd`,
 Plug '{path_from_pwd_above}'
 ```
 
+TODO
+---
+
+- [ ] `nix-build` should probably create the entire plugin
+
 <!-- Links... -->
 [writing-a-neovim-plugin-with-lua]: https://www.linode.com/docs/guides/writing-a-neovim-plugin-with-lua
 [fennel]: https://fennel-lang.org
